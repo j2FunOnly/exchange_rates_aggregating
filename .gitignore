@@ -1,0 +1,6 @@
+spec/fixtures/vcr/cassettes
+spec/examples.txt
+.env
+tmp
+output/*
+!output/.keep

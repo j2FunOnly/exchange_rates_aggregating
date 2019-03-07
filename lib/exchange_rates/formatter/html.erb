@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exchange Rates Aggregating</title>
+  </head>
+  <body>
+    <h1>Exchange Rates Aggregating</h1>
+    <table>
+      <% if headers.any? %>
+        <thead>
+          <tr>
+            <% headers.each do |header| %>
+              <th><%= header %></th>
+            <% end %>
+          </tr>
+        </thead>
+      <% end %>
+      <tbody>
+        <% data.each do |row| %>
+          <tr>
+            <% row.each do |cell| %>
+              <td><%= cell %></td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>
