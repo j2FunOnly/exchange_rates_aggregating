@@ -50,7 +50,7 @@ module ExchangeRates
         URI.parse(url).host
       end
 
-      private
+      protected
 
       def url
         BASE_URL
